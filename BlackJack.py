@@ -11,6 +11,7 @@ class Game:
         else:
             turn_count = 0
     pass
+    #Maybe a game.win function that compares the score to 21
 
 
 class Deck:
@@ -111,8 +112,6 @@ def main():
         print([str(card) for card in main_deck.cards])
         for seated in table:
             print(str(seated))
-        # Jeff.hit(main_deck)
-        # Jeff.hit(main_deck)
         George.deal(main_deck)
         print([str(card) for card in Jeff.hand])
         # print([str(card) for card in George.hand])
