@@ -42,7 +42,8 @@ class Game:
             return True
         elif current_player.handvalue == 21:
             print(f"Blackjack!")
-            self.win(current_player)
+            self.turn = 'complete'
+            return self.win(current_player)
         else:
             return False
 
